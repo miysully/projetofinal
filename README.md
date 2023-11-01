@@ -16,19 +16,19 @@ sobre alunos, incluindo nome, matrícula e nota.
 
 O projeto segue a seguinte estrutura de diretórios:
 
-. src: contém os arquivos de código-fonte do projeto;
-. lib: pasta para bibliotecas;
-. include: armazena arquivos de cabeçalho (headers) usados no projeto;
-. CMakeLists.txt: arquivo de configuração do CMake para a compilação.
+- src: contém os arquivos de código-fonte do projeto;
+- lib: pasta para bibliotecas;
+- include: armazena arquivos de cabeçalho (headers) usados no projeto;
+- CMakeLists.txt: arquivo de configuração do CMake para a compilação.
 
 ## Pré-requisitos
 
 Para compilar e executar este projeto, você precisará das seguintes ferramentas:
 
-- CMake
-- NMake (opcional)
-- MinGW (opcional)
-- Compilador C (por exemplo, GCC)
+- CMake;
+- NMake (opcional);
+- MinGW (opcional);
+- Compilador C (por exemplo, GCC).
 
 Certifique-se de instalá-los em seu sistema antes de continuar.
 
