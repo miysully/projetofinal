@@ -12,6 +12,8 @@ O código é um programa em linguagem C
 que permite ao usuário gerenciar informações
 sobre alunos, incluindo nome, matrícula e nota.
 
+- Explicação do projeto: https://youtu.be/t7FddjiBmhA
+
 ## Estrutura do Projeto
 
 O projeto segue a seguinte estrutura de diretórios:
