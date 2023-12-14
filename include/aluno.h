@@ -7,6 +7,7 @@ struct Aluno{
     float nota;
 };
 
+// Declaracao das funcoes que serao implementadas em 'aluno.c'.
 void adicionarAluno(struct Aluno **alunos, int *quantidadeAlunos);
 void pesquisarAluno(const struct Aluno *alunos, int quantidadeAlunos, int matricula);
 void listarAlunos(const struct Aluno *alunos, int quantidadeAlunos);
