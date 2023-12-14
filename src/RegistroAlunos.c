@@ -1,7 +1,7 @@
 /*
   Autor: Benjamim, Caio e Wesley.
   Data: 01/11/23
-  Descricao: Projeto final de laboratório. Um programa em C que permite gerenciar uma lista de alunos usando
+  Descricao: Projeto final de laboratÃ³rio. Um programa em C que permite gerenciar uma lista de alunos usando
   fundamentos abordados em AED 2 (funcoes, estruturas de dados, alocacao dinamica etc...).
  */
 
@@ -11,8 +11,8 @@
 #include "aluno.h"
 
 int main(){
-    struct Aluno *alunos = NULL;
-    int quantidadeAlunos = 0;
+    struct Aluno *alunos = NULL; // Declara da lista de alunos.
+    int quantidadeAlunos = 0; // Armazena a quantidade de alunos na lista.
     int opcao, matricula;
 
     do {
@@ -27,26 +27,26 @@ int main(){
 
         switch (opcao) {
             case 1:
-                adicionarAluno(&alunos, &quantidadeAlunos);
+                adicionarAluno(&alunos, &quantidadeAlunos); // Chama a funcao para adicionar um aluno.
                 break;
             case 2:
                 printf("Digite a matricula do aluno a ser pesquisado: ");
                 scanf("%d", &matricula);
-                pesquisarAluno(alunos, quantidadeAlunos, matricula);
+                pesquisarAluno(alunos, quantidadeAlunos, matricula); // Chama a funcao para pesquisar um aluno por matricula.
                 break;
             case 3:
-                listarAlunos(alunos, quantidadeAlunos);
+                listarAlunos(alunos, quantidadeAlunos); // Chama a funcao para listar todos os alunos.
                 break;
             case 4:
-                ordenarAlunos(alunos, quantidadeAlunos);
+                ordenarAlunos(alunos, quantidadeAlunos); // Chama a funcao para ordenar os alunos por matricula.
                 break;
-            case 0:
+            case 0: // Exit do programa.
                 break;
             default:
                 printf("Opcao invalida. Tente novamente.\n");
         }
     } while (opcao != 0);
 
-    free(alunos);
+    free(alunos); // Libera a memoria alocada dinamicamente para a lista de alunos.
     return 0;
 }
